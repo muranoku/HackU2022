@@ -34,8 +34,8 @@ ul, li {
   margin-left: 45px;
 }
 
-.menu-item .fa {
-  font-size: 19px;
+.menu-item .fa-fish-fins {
+  font-size: 24px;
   width: 45px;
   text-align: center;
 }
@@ -44,6 +44,7 @@ ul, li {
   line-height: 35px;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
+  line-height: 50px;
 }
 
 .menu-item:hover {

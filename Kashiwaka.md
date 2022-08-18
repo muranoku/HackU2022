@@ -1,1 +1,1 @@
-arumikannniarumikann:wq
+書き直したよ

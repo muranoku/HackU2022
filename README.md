@@ -1,3 +1,2 @@
-# git-samaple
+# HackU2022-Online用のリポジトリ
 
-gitの流れを体験

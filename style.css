@@ -1,0 +1,55 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  height: 100%;
+}
+
+.menu-bar {
+  background: #6f748a;
+  color: #fff;
+  position: absolute;
+  height: 100%;
+  width: 45px;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: width 0.1s ease-in;
+  transition-delay: 0.3s;
+}
+
+.contents {
+  background: #eee;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-left: 45px;
+}
+
+.menu-item .fa {
+  font-size: 19px;
+  width: 45px;
+  text-align: center;
+}
+
+.menu-item {
+  line-height: 35px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.menu-item:hover {
+  background: #2a748a;
+}
+
+.menu-bar:hover {
+  width: 200px;
+}

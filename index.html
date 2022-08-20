@@ -12,6 +12,7 @@
 
     <body>
         <div class="container">
+		<!--menu bar-->
             <ul class="menu-bar">
                 <li class="menu-item">
                     <i class="fa-solid fa-fish-fins" aria-hidden="true"></i></i>あいうえおか
@@ -23,6 +24,7 @@
             <div class="contents">
                 本文
 
+		<!--good button, bad button-->
 		<div class="thumbs-button">
                     <div class="hover green">
                         <i class="fa-solid fa-thumbs-up"></i>
@@ -32,6 +34,11 @@
                     </div>
                 </div>
 
+		<!--copy button-->
+                <div>
+                    <input id="copyTarget" type="text" value="こんにちは" readonly>
+                    <button class="btn btn-copy" onclick="copyToClipboard()"><i class="fa-solid fa-copy"></i></button>
+                </div>
             </div>
         </div>
     </body>

@@ -55,3 +55,20 @@ ul, li {
   width: 200px;
 }
 
+.fa-thumbs-up, .fa-thumbs-down{
+  color: #6f748a;
+  cursor: pointer;
+}
+
+.fa-thumbs-up:hover{
+  color: #EF476F;
+}
+
+.fa-thumbs-down:hover{
+  color: #06D6A0;
+}
+
+.thumbs-button .hover{
+  display: inline-block;
+  position: relative;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>絞り込み検索</title>
+    
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+    crossorigin="anonymous">
+    </script>
+      
+</head>
+<body>
+        
+        <!-- 絞込み検索UI start -->
+        <div class="search_area">
+            <form id="selectForm">
+                <ul class="menu-bar">
+                    <div class="search_ui category_search_box">
+                     <li class="menu-item">
+                            <i class="fa-solid fa-fish-fins" aria-hidden="true"></i></i>
+                            <label class="checkbox_margin">
+                         <input type="radio" name="category" value="fullHD" class="radio_input">
+                            <span class="radio_parts padding_adjust1">フルHD</span></label>
+                    </li>
+                    <li class="menu-item">
+                            <label class="checkbox_margin">
+                            <input type="radio" name="category" value="4K" class="radio_input">
+                            <span class="radio_parts padding_adjust1">4K</span></label>
+                    </li>
+                    <li class="menu-item">
+                        <label class="checkbox_margin">
+                             <input type="radio" name="category" value="4K" class="radio_input">
+                            <span class="radio_parts padding_adjust1">4K</span></label>
+                    </li>
+                    <li class="menu-item">
+                            <label class="checkbox_margin">
+                            <input type="radio" name="category" value="orgEL" class="radio_input">
+                            <span class="radio_parts padding_adjust1">4K有機EL</span></label>
+                    </li>
+                    <li class="menu-item">
+                            <label class="checkbox_margin">
+                            <input type="radio" name="category" value="" checked="checked" class="radio_input" id="allItem">
+                             <span class="radio_parts padding_adjust1">全てのノートPC</span></label>
+                    </li>
+            
+                </div>
+                <div class="search_ui size_search_box pc"> <span id="sizeBox">
+                    <label>
+                      <input type="checkbox" name="size" value="13inch" class="checkbox_input size_sort">
+                      <span class="checkbox_parts">13インチ</span></label>
+                      <br>
+                     <label>
+                      <input type="checkbox" name="size" value="15inch" class="checkbox_input size_sort">
+                      <span class="checkbox_parts">15インチ</span></label>
+                      <br>
+                 <label>
+                      <input type="checkbox" name="size" value="17inch" class="checkbox_input size_sort">
+                       <span class="checkbox_parts">17インチ</span></label>
+                    </span>
+                        <br>
+                <label class="all_btn">
+                    <input type="checkbox" id="checkAll" name="size_all" class="checkbox_input">
+                    <span class="checkbox_parts">全サイズ選択</span></label>
+                </div>
+                </ul>
+            </form>
+        </div>
+        <!-- 絞込み検索UI end -->
+    <!-- 絞り込み対象一覧 start -->
+    <div class="wrapper">
+        <!--元々-->
+        <div class="item" data-category='["4K", "orgEL"]' data-size="17inch">
+            <p class="item_name">17インチ 4K有機EL液晶 ノートPC</p>
+            <img src="" alt="対象製品画像" />
+          </div>
+        <div class="item_container list">
+          <div class="item" data-category='["fullHD"]' data-size="13inch">
+            <p class="item_name"></p>
+            <a href="sample2.html" class="btn" >13インチ フルHD液晶 ノートPC</a>
+          </div>
+          <div class="item" data-category='["fullHD"]' data-size="15inch">
+            <p class="item_name"></p>
+            <a href="sample2.html" class="btn" >15インチ フルHD液晶 ノートPC</a>
+          </div>
+          <div class="item" data-category='["4K"]' data-size="15inch">
+            <p class="item_name"></p>
+            <a href="sample2.html" class="btn" >15インチ 4K液晶 ノートPC</a>
+          </div>
+          <div class="item" data-category='["4K", "orgEL"]' data-size="15inch">
+            <p class="item_name"></p>
+            <a href="sample2.html" class="btn" >15インチ 4K有機EL液晶 ノートPC</a>
+          </div>
+          <div class="item" data-category='["4K"]' data-size="17inch">
+            <p class="item_name"></p>
+            <a href="sample2.html" class="btn" >17インチ 4K液晶 ノートPC</a>
+          </div>
+            <!--付け足したところ-->
+          <div class = "item" data-category='["fullHD"]' data-size="13inch">
+            <p class="item_name"></p>
+            <a href="sample2.html" class="btn" >13intHDnote</a>
+        </div>
+          </div>
+        </div>
+    </div>
+        <!-- 絞り込み対象一覧 end -->
+        <script src="index.js"></script>
+
+        <!--検索バーの実装-->
+        
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <form method="get" action="#" class="search_container">
+            <input type="text" size="25" placeholder="キーワード検索">
+            <input type="submit" value="&#xf002">
+        </form>
+       
+</body>
+
+</html>

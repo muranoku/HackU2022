@@ -4,6 +4,20 @@ html, body {
   height: 100%;
 }
 
+body{
+  padding-top: 60px; /*header分*/
+}
+
+header{
+  background: #A5D4D9;
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  align-items: center; /*要素を中央揃え*/
+}
+
 ul, li {
   margin: 0;
   padding: 0;
@@ -15,7 +29,7 @@ ul, li {
 }
 
 .menu-bar {
-  background: #6f748a;
+  background: #A5D4D9;
   color: #fff;
   position: absolute;
   height: 100%;

@@ -4,10 +4,7 @@ html, body {
   height: 100%;
 }
 
-/*
-header{
-  position: fixed; /*位置を固定
-  top: 0px;
+
   left: 0;
   background: #A5D4D9;
   width: 100%;
@@ -40,7 +37,7 @@ header{
   background: #fff;
 }
 
-.drop-shadow{
+#drop-shadow{
   filter: drop-shadow(5px 5px 7px rgba(0, 0, 0, .16));
 }
 

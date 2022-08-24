@@ -4,19 +4,13 @@ html, body {
   height: 100%;
 }
 
-body{
-  padding-top: 60px; /*header分引く*/
-}
 
-#header{
-  position: fixed; /*位置を固定*/
-  top: -60px; 
   left: 0;
   background: #A5D4D9;
   width: 100%;
   height: 60px;
   clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 83% 100%);
-  z-index: 1; /*要素を最前面に*/
+  z-index: 1; /*要素を最前面に
 }
 
 #header-deoration{
@@ -25,10 +19,30 @@ body{
   background: #515C80;
   clip-path: polygon(100% 0, 0 100%, 100% 100%);
   margin-right: auto;
+}*/
+
+header{
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+#header-contents{
+  width: 80%; /* 幅 */
+  height: 0px; /* y位置 */
+  border-top: 60px solid #A5D4D9; /* 高さ */
+  border-left: 0px solid transparent; /* 左側の角度 */
+  border-right: 150px solid transparent; /* 右側の角度 */
+  background: #fff;
 }
 
 #drop-shadow{
   filter: drop-shadow(5px 5px 7px rgba(0, 0, 0, .16));
+}
+
+.contents{
+  padding-top: 60px; /*header分余白*/
 }
 
 ul, li {
@@ -51,6 +65,8 @@ ul, li {
   overflow: hidden;
   transition: width 0.1s ease-in;
   transition-delay: 0.3s;
+  box-shadow: 5px 5px 7px 0 rgba(0, 0, 0, .16);
+  z-index: 2; /*要素を最前面に*/
 }
 
 .contents {

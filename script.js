@@ -1,9 +1,9 @@
+//クリップボードにコピー
 function copyToClipboard(){
     var copyTarget = document.getElementById("copyTarget");
     copyTarget.select();
     document.execCommand("Copy");
 }
-
 let searchUi = ".search_ui"; // 絞り込み検索条件設定エリア
 let listItem = ".item"; // 検索対象アイテム
 let hideItem = "hide_item"; // 対象外アイテムに付与されるclass名
@@ -85,3 +85,21 @@ $(function () {
   });
 });
 
+//ボタンの表示非表示
+$(function() {
+  $(".D").click(function() {
+      $(".E").slideToggle("");
+  });
+});
+$(function() {
+  $(".A").click(function() {
+      $(".B").slideToggle("");
+  });
+});
+
+//ハンバーガーメニューの表示非表示
+$(function() {
+  $(".hamburger").click(function() {
+      $(".menu-bar").slideToggle("");
+  });
+});

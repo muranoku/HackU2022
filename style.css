@@ -4,6 +4,7 @@ html, body {
   height: 100%;
 }
 
+/*ヘッダー*/
 #header{
   position: fixed; /*位置を固定*/
   top: 0px; 
@@ -12,45 +13,56 @@ html, body {
   width: 100%;
   height: 60px;
   clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 83% 100%);
-  z-index: 1; 
+  z-index: 2; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
 }
-
 #header-decoration{
   position: fixed; /*位置を固定*/
-  top: 0px;
-  left: 1170px;
+  top: -70px;
+  right: 0px;
   margin-right: 0;
-  width: 140px;
+  width: 250px;
   height: 410px;
   background: #515C80;
-  clip-path: polygon(54% 0, 100% 0, 100% 28%, 0 28%);
+  clip-path: polygon(100% 0, 100% 0, 100% 28%, 0 28%);
   margin-right: auto;
+  z-index: 1;
 }
-
 #header-contents{
-  width: 86%; 
+  width: 80%; 
   height: 0px; 
   border-top: 60px solid #A5D4D9; 
   border-left: 0px solid transparent; 
   border-right: 150px solid transparent; 
   /*background: #fff;*/
 }
-
 .drop-shadow{
   filter: drop-shadow(20px 5px 7px rgba(0, 0, 0, .16));
 }
-
-.contents{
-  padding-top: 60px; /*header分余白*/
+.contents {
+  /*background: #fff;*/
+  height: 100%;
+  padding-left: 200px;
+  box-sizing: border-box;
+  margin-left: 40px;
+  padding-top: 100px;
 }
-
 #drop-shadow{
   filter: drop-shadow(5px 5px 7px rgba(0, 0, 0, .16));
 }
-
 .contents{
   padding-top: 60px; /*header分余白*/
-  height: 2000px;
+}
+header{
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
 }
 
 ul, li {
@@ -61,14 +73,33 @@ ul, li {
 
 .container {
   height: 100%;
+  position: fixed;
 }
 
+/*メニューバー*/
+.hamburger{
+  position: fixed;
+  top: 10px;
+  left: 10px; 
+  width:50px;
+  height:50px;
+  background:#3879D9;
+  border-radius:100%;
+  position: fixed;
+  z-index: 9999;
+}
+.menutop_btn{
+  color:#ffff;
+}
 .menu-bar {
+  top: 0px;
+  display: none;
   background: #A5D4D9;
   color: #fff;
   position: absolute;
   height: 100%;
-  width: 45px;
+  width: 200px;
+  padding-top: 70px;
   white-space: nowrap;
   overflow: hidden;
   transition: width 0.1s ease-in;
@@ -76,7 +107,6 @@ ul, li {
   box-shadow: 5px 5px 7px 0 rgba(0, 0, 0, .16);
   z-index: 2; /*要素を最前面に*/
 }
-
 .contents {
   background: #fff;
   height: 100%;
@@ -84,51 +114,45 @@ ul, li {
   box-sizing: border-box;
   margin-left: 40px;
 }
-
 .menu-item .fa-fish-fins {
   font-size: 24px;
   width: 45px;
   text-align: center;
 }
-
 .menu-item {
   line-height: 35px;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
   line-height: 50px;
 }
-
 .menu-item:hover {
   background: #2a748a;
 }
-
 .menu-bar:hover {
   width: 200px;
 }
 
+/*グッド、バッドボタン*/
 .thumbs-button{
   text-align: right;
   padding-right: 300px;
 }
-
 .fa-thumbs-up, .fa-thumbs-down{
   color: #6f748a;
   cursor: pointer;
 }
-
 .fa-thumbs-up:hover{
   color: #EF476F;
 }
-
 .fa-thumbs-down:hover{
   color: #06D6A0;
 }
-
 .thumbs-button .hover{
   display: inline-block;
   position: relative;
 }
 
+/*コピーボタン*/
 .btn-copy{
   color: #6f748a;
   background: none;
@@ -136,20 +160,19 @@ ul, li {
   appearance: none;
   border: 0;
 }
-
 .btn-copy:hover{
   color: #2a748a;
   background: none;
 }
+#copyTarget{
+  border-width: 0;
+}
 
+/*ボタン押下時、位置をずらす*/
 .btn:focus{
   position:relative;
   top:3px;
   transition:0s;
-}
-
-#copyTarget{
-  border-width: 0;
 }
 
 #title{
@@ -170,10 +193,14 @@ ul, li {
 
 
 /*検索バー*/
+.searchbar {
+  width: 280px;
+  margin: 30px auto;
+  z-index: 50000;
+}
 .search_container{
   box-sizing: border-box;
   position: relative;
-  bottom: 400px;
   border: 1px solid #999;
   padding: 4px 80px;
   border-radius: 40px;
@@ -198,6 +225,12 @@ ul, li {
   outline : none;
   width: 2.0em;
   height: 2.0em;
+}
+.search{
+  z-index: 2;
+  position: fixed; /*位置を固定*/
+  top: 10px;
+  margin:auto;
 }
 
 /* ラジオボタン*/
@@ -288,8 +321,9 @@ ul, li {
   margin: 1.0rem;
   padding: 1.0rem;
   background: #efefef;
-  width: calc(80% / 3);
-  text-align: left;
+  width: calc(80% / 5);
+  text-align: center;
+  font-size: 18px;
 }
 
 /*絞り込み対称一覧ホバー*/
@@ -306,3 +340,19 @@ ul, li {
   text-align: left;
 }
 
+/*絞り込み対称押下時のベロだし*/
+.wrapper .btn {  
+  color:#000000;
+}
+.D{
+  display: inline-block;
+  background: #efefef;
+  padding: 10px;
+  width: calc(80% / 5);
+  cursor: pointer;
+}
+.D-open{
+  display:none;
+  background: #ffaf74;
+  height: 100px;
+}

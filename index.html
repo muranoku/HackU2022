@@ -2,130 +2,141 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>トップページ</title>
-        <link rel="stylesheet" href="style.css">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>トップページ</title>
-        <script src="https://kit.fontawesome.com/384186efa0.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+        <title>トップページ</title>
         <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <script src="https://kit.fontawesome.com/384186efa0.js" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     </head>
         
-    <header class="drop-shadow">
-      <div id="header-contents">      
-      </div>
-      <div id="header-decoration">
-      </div>
-    </header>
-
     <body>
-        <div class="container">
-          <div class="search_area">
-            <form id="selectForm">
+      <header class="drop-shadow">
+        <div id="header-contents">      
+        </div>
+        <div id="header-decoration">
+        </div>
+      </header>
 
-              <!--menu bar-->
-              <ul class="menu-bar"> 
+      <!--ハンバーガー-->
+      <div class="hamburger"></div>
+      <div class="container">
+        <div class="search_area">
+          <form id="selectForm">
 
-                <!-- 絞込み検索-->
-                <div class="search_ui category_search_box">
-                  <li class="menu-item">
-                    <i class="fa-solid fa-fish-fins" aria-hidden="true"></i>
-                    <label class="checkbox_margin">
-                    <input type="radio" name="category" value="friendly" class="radio_input">
-                    <span class="radio_parts padding_adjust1">近しい間柄</span></label>
-                  </li>
-                  <li class="menu-item">
-                    <label class="checkbox_margin">
-                    <input type="radio" name="category" value="notfriendly" class="radio_input">
-                    <span class="radio_parts padding_adjust1">遠い間柄</span></label>
-                  </li>
-                  <li class="menu-item">
-                    <label class="checkbox_margin">
-                    <input type="radio" name="category" value="relatives" class="radio_input">
-                    <span class="radio_parts padding_adjust1">親族</span></label>
-                  </li>
-                  <li class="menu-item">
-                    <label class="checkbox_margin">
-                    <input type="radio" name="category" value="boss" class="radio_input">
-                    <span class="radio_parts padding_adjust1">上司</span></label>
-                  </li>
-                  <li class="menu-item">
-                    <label class="checkbox_margin">
-                    <input type="radio" name="category" value="" checked="checked" class="radio_input" id="allItem">
-                    <span class="radio_parts padding_adjust1">全選択</span></label>
-                  </li>
-                </div>
-                <div class="search_ui size_search_box pc"> <span id="sizeBox">
-                  <label>
-                    <input type="checkbox" name="size" value="daily" class="checkbox_input size_sort">
-                    <span class="checkbox_parts">日常</span>
-                  </label><br>
-                  <label>
-                    <input type="checkbox" name="size" value="company" class="checkbox_input size_sort">
-                    <span class="checkbox_parts">会社</span>
-                  </label><br>
-                  <label>
-                    <input type="checkbox" name="size" value="letter" class="checkbox_input size_sort">
-                    <span class="checkbox_parts">手紙</span>
-                  </label><br>
-                  <label class="all_btn">
-                    <input type="checkbox" id="checkAll" name="size_all" class="checkbox_input">
-                    <span class="checkbox_parts">全選択</span>
-                  </label>
-                </div>
+            <!--menu bar-->
+            <ul class="menu-bar"> 
+
+              <!-- 絞込み検索-->
+              <div class="search_ui category_search_box">
                 <li class="menu-item">
-                  <i aria-hidden="true"></i>トップページに戻る
+                   <i class="fa-solid fa-fish-fins" aria-hidden="true"></i>
+                   <label class="checkbox_margin">
+                   <input type="radio" name="category" value="friendly" class="radio_input">
+                  <span class="radio_parts padding_adjust1">近しい間柄</span></label>
                 </li>
-              </ul>
-            </form>
-          </div>
+                <li class="menu-item">
+                  <label class="checkbox_margin">
+                  <input type="radio" name="category" value="notfriendly" class="radio_input">
+                  <span class="radio_parts padding_adjust1">遠い間柄</span></label>
+                </li>
+                <li class="menu-item">
+                  <label class="checkbox_margin">
+                  <input type="radio" name="category" value="relatives" class="radio_input">
+                  <span class="radio_parts padding_adjust1">親族</span></label>
+                </li>
+                <li class="menu-item">
+                  <label class="checkbox_margin">
+                  <input type="radio" name="category" value="boss" class="radio_input">
+                  <span class="radio_parts padding_adjust1">上司</span></label>
+                </li>
+                <li class="menu-item">
+                  <label class="checkbox_margin">
+                  <input type="radio" name="category" value="" checked="checked" class="radio_input" id="allItem">
+                  <span class="radio_parts padding_adjust1">全選択</span></label>
+                </li>
+              </div>
+              <div class="search_ui size_search_box pc"> <span id="sizeBox">
+                <label>
+                   <input type="checkbox" name="size" value="daily" class="checkbox_input size_sort">
+                   <span class="checkbox_parts">日常</span>
+                </label><br>
+                <label>
+                   <input type="checkbox" name="size" value="company" class="checkbox_input size_sort">
+                   <span class="checkbox_parts">会社</span>
+                 </label><br>
+                <label>
+                   <input type="checkbox" name="size" value="letter" class="checkbox_input size_sort">
+                   <span class="checkbox_parts">手紙</span>
+                </label><br>
+                <label class="all_btn">
+                  <input type="checkbox" id="checkAll" name="size_all" class="checkbox_input">
+                  <span class="checkbox_parts">全選択</span>
+                  </label>
+              </div>
+              <div class="searchbar">
+                <div class="search">
+                  <form method="get" action="#" class="search_container">
+                    <input type="text" id="keyword" size="25" placeholder="キーワード検索">
+                    <input type="submit" value="&#xf002">
+                  </form>
+                </div>
+              </div>
+              <li class="menu-item">
+                <i aria-hidden="true"></i>トップページに戻る
+              </li>
+            </ul>
+          </form>
+        </div>
 
-          <!--キーワード検索-->
-          <div class="wrapper">
-            入力候補をクリックすると参照ページに移ります<br>
-            <input id="keyword">
-          </div>
+        <!--キーワード検索-->
+        <div class="wrapper">
+          入力候補をクリックすると参照ページに移ります<br>
+          <input id="keyword">
+        </div>
 
-          <!-- 絞り込み対象一覧 -->
-          <div class="wrapper">
-            <div class="item" data-category='["4K", "orgEL"]' data-size="17inch">
-              <p class="item_name">17インチ 4K有機EL液晶 ノートPC</p>
-              <img src="" alt="対象製品画像" />
+        <!-- 絞り込み対象一覧 -->
+        <div class="wrapper">
+          <div class="item" data-category='["4K", "orgEL"]' data-size="17inch">
+            <p class="item_name">17インチ 4K有機EL液晶 ノートPC</p>
+          </div>
+          <div class="item_container list">
+            <div class="item" data-category='["friendly"]' data-size="daily">
+              <p class="item_name"></p>
+              <a href="wordDetailPage.html" class="btn" >日常・友達</a>
             </div>
-            <div class="item_container list">
-              <div class="item" data-category='["friendly"]' data-size="daily">
-                <p class="item_name"></p>
-                <a href="wordDetailPage.html" class="btn" >日常・友達</a>
-              </div>
-              <div class="item" data-category='["notfriendly"]' data-size="daily">
-                <p class="item_name"></p>
-                <a href="wordDetailPage.html" class="btn" >日常・知り合い</a>
-              </div>
-              <div class="item" data-category='["friendly"]' data-size="company">
-                <p class="item_name"></p>
-                <a href="wordDetailPage.html" class="btn" >会社・同僚</a>
-              </div>
-              <div class="item" data-category='["boss"]' data-size="company">
-                <p class="item_name"></p>
-                <a href="wordDetailPage.html" class="btn" >会社・上司</a>
-              </div>
-              <div class="item" data-category='["friendly"]' data-size="letter">
-                <p class="item_name"></p>
-                <a href="wordDetailPage.html" class="btn" >手紙・友達</a>
-              </div>
-              <div class="item" data-category='["relatives"]' data-size="letter">
-                <p class="item_name"></p>
-                <a href="wordDetailPage.html" class="btn" >手紙・親族</a>
-              </div>
-              <div class = "item" data-category='["fullHD"]' data-size="13inch">
-                <p class="item_name"></p>
-                <a href="wordDetailPage.html" class="btn" >13intHDnote</a>
-              </div>
+            <div class="item" data-category='["notfriendly"]' data-size="daily">
+              <p class="item_name"></p>
+              <a href="wordDetailPage.html" class="btn" >日常・知り合い</a>
             </div>
+            <div class="item" data-category='["friendly"]' data-size="company">
+              <p class="item_name"></p>
+              <a href="wordDetailPage.html" class="btn" >会社・同僚</a>
+            </div>
+            <div class="item" data-category='["boss"]' data-size="company">
+              <p class="item_name"></p>
+              <a href="wordDetailPage.html" class="btn" >会社・上司</a>
+            </div>
+            <div class="item" data-category='["friendly"]' data-size="letter">
+              <p class="item_name"></p>
+              <a href="wordDetailPage.html" class="btn" >手紙・友達</a>
+            </div>
+            <div class="item" data-category='["relatives"]' data-size="letter">
+              <p class="item_name"></p>
+              <a href="wordDetailPage.html" class="btn" >手紙・親族</a>
+            </div>
+            <div class="item D" data-category='["relatives"]' data-size="letter">
+              <p class="item_name"></p>
+              手紙・親族
+            </div> 
+          </div>
+          <div class="D-open">
+            <a href="wordDetailPage.html" class="btn" >手紙・親族</a>
           </div>
         </div>
-      <script src="wik.js"></script>
+      </div>
       <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
       <script src="script.js"></script>
     </body>

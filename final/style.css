@@ -30,7 +30,7 @@ html, body {
     transition: width 0.1s ease-in;
     transition-delay: 0.3s;
     box-shadow: 5px 5px 7px 0 rgba(0, 0, 0, .16);
-    z-index: 2; /*要素を最前面に*/
+    z-index: 3; /*要素を最前面に*/
   }
   
   .contents {
@@ -148,16 +148,21 @@ html, body {
 }
 /*ここから先いじるとjsが動かなくなる可能性あり*/
 .item {
-    margin: 1.0rem;
-    padding: 1.0rem;
-    background: #efefef;
-    text-align: left;
+    margin: 20px;
+    padding: 20px;
+    background: none;
+    border-radius: 5px;
+    text-align: center;
     width: calc(80% / 5);
-    
+    cursor: pointer;
+    font-size: 0;
+    border: solid;
+    border-color: #EE8D8A;
 }
 .item_container{
     display: flex;
     flex-wrap: wrap;
+    background: none;
 }
 
 
@@ -166,7 +171,7 @@ html, body {
     display: none;
 }
 .item:hover{
-    background: #f56500;
+    background: none;
 }
 /*ここまでいじるとjsが動かなくなる可能性あり*/
 
@@ -257,7 +262,6 @@ header{
     border-top: 60px solid #A5D4D9; /* 高さ */
     border-left: 0px solid transparent; /* 左側の角度 */
     border-right: 150px solid transparent; /* 右側の角度 */
-  
   }
   
   .drop-shadow{
@@ -356,7 +360,7 @@ header{
     color: #2a748a;
     background: none;
   }
-  #copyTarget{
+  .copyTarget1 ,.copyTarget2 ,.copyTarget3 ,.copyTarget4 ,.copyTarget5 {
     border-width: 0;
   }
   
@@ -382,16 +386,21 @@ header{
     font-size: 14px;
     padding: 10px
   }
+  
 /*ベロだし*/
+.item_hover:hover{
+    background: black;/*rgba(238, 141, 138, 0.2)*/
+    width: 200px;
+}
+
 .A{
-    margin:auto;
+    margin: auto;
     text-align: center;
-    font-size: 23px;
+    font-size: 16px;
     width: calc(80% / 5);
     height: 100%;
-}
-.A:hover{
-    background: #f56500;
+    padding: 20px 30px;
+    border-radius: 5px;
 }
 .A1{
     display:none;
@@ -401,15 +410,15 @@ header{
 }
 
 .B{
-    margin:auto;
+    margin: auto;
     text-align: center;
-    font-size: 23px;
+    font-size: 16px;
     width: calc(80% / 5);
     height: 100%;
+    padding: 20px 30px;
+    border-radius: 5px;
 }
-.B:hover{
-    background: #f56500;
-}
+
 .B1{
     display:none;
     background: #ffaf74;
@@ -417,15 +426,15 @@ header{
     width:80%;
 }
 .C{
-    margin:auto;
+    margin: auto;
     text-align: center;
-    font-size: 23px;
+    font-size: 16px;
     width: calc(80% / 5);
     height: 100%;
+    padding: 20px 30px;
+    border-radius: 5px;
 }
-.C:hover{
-    background: #f56500;
-}
+
 .C1{
     display:none;
     background: #ffaf74;
@@ -433,14 +442,13 @@ header{
     width:80%;
 }
 .D{
-    margin:auto;
+    margin: auto;
     text-align: center;
-    font-size: 23px;
+    font-size: 16px;
     width: calc(80% / 5);
     height: 100%;
-}
-.D:hover{
-    background: #f56500;
+    padding: 20px 30px;
+    border-radius: 5px;
 }
 .D1{
     display:none;
@@ -449,14 +457,13 @@ header{
     width:80%;
 }
 .E{
-    margin:auto;
+    margin: auto;
     text-align: center;
-    font-size: 23px;
+    font-size: 16px;
     width: calc(80% / 5);
     height: 100%;
-}
-.E:hover{
-    background: #f56500;
+    padding: 20px 30px;
+    border-radius: 5px;
 }
 .E1{
     display:none;
@@ -464,18 +471,16 @@ header{
     height: 100px;
     width:80%;
 }
-
 .F{
-    margin:auto;
+    margin: auto;
     text-align: center;
-    font-size: 23px;
+    font-size: 16px;
     width: calc(80% / 5);
     height: 100%;
+    padding: 20px 30px;
+    border-radius: 5px;
 }
 /*メール*/
-.F:hover{
-    background: #f56500;
-}
 .F1{
     display:none;
     background: #ffaf74;
@@ -483,29 +488,28 @@ header{
     width:80%;
 }
 .G{
-    margin:auto;
+    margin: auto;
     text-align: center;
-    font-size: 23px;
+    font-size: 16px;
     width: calc(80% / 5);
     height: 100%;
-}
-.G:hover{
-    background: #f56500;
+    padding: 20px 30px;
+    border-radius: 5px;
 }
 .G1{
     display:none;
     background: #ffaf74;
     height: 100px;
     width:80%;
-}.H{
-    margin:auto;
+}
+.H{
+    margin: auto;
     text-align: center;
-    font-size: 23px;
+    font-size: 16px;
     width: calc(80% / 5);
     height: 100%;
-}
-.H:hover{
-    background: #f56500;
+    padding: 20px 30px;
+    border-radius: 5px;
 }
 .H1{
     display:none;
@@ -513,14 +517,13 @@ header{
     height: 100px;
     width:80%;
 }.I{
-    margin:auto;
+    margin: auto;
     text-align: center;
-    font-size: 23px;
+    font-size: 16px;
     width: calc(80% / 5);
     height: 100%;
-}
-.I:hover{
-    background: #f56500;
+    padding: 20px 30px;
+    border-radius: 5px;
 }
 .I1{
     display:none;
@@ -529,14 +532,13 @@ header{
     width:80%;
 }
 .J{
-    margin:auto;
+    margin: auto;
     text-align: center;
-    font-size: 23px;
+    font-size: 16px;
     width: calc(80% / 5);
     height: 100%;
-}
-.J:hover{
-    background: #f56500;
+    padding: 20px 30px;
+    border-radius: 5px;
 }
 .J1{
     display:none;
@@ -546,14 +548,13 @@ header{
 }
 /*手紙*/
 .K{
-    margin:auto;
+    margin: auto;
     text-align: center;
-    font-size: 23px;
+    font-size: 16px;
     width: calc(80% / 5);
     height: 100%;
-}
-.K:hover{
-    background: #f56500;
+    padding: 20px 30px;
+    border-radius: 5px;
 }
 .K1{
     display:none;
@@ -562,14 +563,13 @@ header{
     width:80%;
 }
 .L{
-    margin:auto;
+    margin: auto;
     text-align: center;
-    font-size: 23px;
+    font-size: 16px;
     width: calc(80% / 5);
     height: 100%;
-}
-.L:hover{
-    background: #f56500;
+    padding: 20px 30px;
+    border-radius: 5px;
 }
 .L1{
     display:none;
@@ -578,14 +578,13 @@ header{
     width:80%;
 }
 .M{
-    margin:auto;
+    margin: auto;
     text-align: center;
-    font-size: 23px;
+    font-size: 16px;
     width: calc(80% / 5);
     height: 100%;
-}
-.M:hover{
-    background: #f56500;
+    padding: 20px 30px;
+    border-radius: 5px;
 }
 .M1{
     display:none;
@@ -594,14 +593,14 @@ header{
     width:80%;
 }
 .N{
-    margin:auto;
+    margin: auto;
     text-align: center;
-    font-size: 23px;
+    font-size: 16px;
     width: calc(80% / 5);
     height: 100%;
-}
-.N:hover{
-    background: #f56500;
+    padding: 20px 30px;
+    border-radius: 5px;
+    white-space: nowrap;
 }
 .N1{
     display:none;
@@ -610,14 +609,14 @@ header{
     width:80%;
 }
 .O{
-    margin:auto;
+    margin: auto;
     text-align: center;
-    font-size: 23px;
+    font-size: 16px;
     width: calc(80% / 5);
     height: 100%;
-}
-.O:hover{
-    background: #f56500;
+    padding: 20px 30px;
+    border-radius: 5px;
+    white-space: nowrap;
 }
 .O1{
     display:none;
@@ -627,14 +626,14 @@ header{
 }
 /*チャット*/
 .P{
-    margin:auto;
+    margin: auto;
     text-align: center;
-    font-size: 23px;
+    font-size: 16px;
     width: calc(80% / 5);
     height: 100%;
-}
-.P:hover{
-    background: #f56500;
+    padding: 20px 30px;
+    border-radius: 5px;
+    white-space: nowrap;
 }
 .P1{
     display:none;
@@ -643,14 +642,14 @@ header{
     width:80%;
 }
 .Q{
-    margin:auto;
+    margin: auto;
     text-align: center;
-    font-size: 23px;
+    font-size: 16px;
     width: calc(80% / 5);
     height: 100%;
-}
-.Q:hover{
-    background: #f56500;
+    padding: 20px 30px;
+    border-radius: 5px;
+    white-space: nowrap;
 }
 .Q1{
     display:none;
@@ -659,14 +658,14 @@ header{
     width:80%;
 }
 .R{
-    margin:auto;
+    margin: auto;
     text-align: center;
-    font-size: 23px;
+    font-size: 16px;
     width: calc(80% / 5);
     height: 100%;
-}
-.R:hover{
-    background: #f56500;
+    padding: 20px 30px;
+    border-radius: 5px;
+    white-space: nowrap;
 }
 .R1{
     display:none;
@@ -675,14 +674,14 @@ header{
     width:80%;
 }
 .S{
-    margin:auto;
+    margin: auto;
     text-align: center;
-    font-size: 23px;
+    font-size: 16px;
     width: calc(80% / 5);
     height: 100%;
-}
-.S:hover{
-    background: #f56500;
+    padding: 20px 30px;
+    border-radius: 5px;
+    white-space: nowrap;
 }
 .S1{
     display:none;
@@ -691,14 +690,14 @@ header{
     width:80%;
 }
 .T{
-    margin:auto;
+    margin: auto;
     text-align: center;
-    font-size: 23px;
+    font-size: 16px;
     width: calc(80% / 5);
     height: 100%;
-}
-.T:hover{
-    background: #f56500;
+    padding: 20px 30px;
+    border-radius: 5px;
+    white-space: nowrap;
 }
 .T1{
     display:none;
@@ -707,10 +706,12 @@ header{
     width:80%;
 }
 
+
 footer{
     background: #515C80;
     height: 30px;
     width: 100%;
-
+    position: fixed;
+    bottom: 0;
 }
   

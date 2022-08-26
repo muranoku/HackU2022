@@ -87,8 +87,28 @@ $(function() {
 });
 
 //クリップボードにコピー
-function copyToClipboard(){
-  var copyTarget = document.getElementById("copyTarget");
+function copyToClipboard1(){
+  var copyTarget = document.getElementById("copyTarget1");
+  copyTarget.select();
+  document.execCommand("Copy");
+}
+function copyToClipboard2(){
+  var copyTarget = document.getElementById("copyTarget2");
+  copyTarget.select();
+  document.execCommand("Copy");
+}
+function copyToClipboard3(){
+  var copyTarget = document.getElementById("copyTarget3");
+  copyTarget.select();
+  document.execCommand("Copy");
+}
+function copyToClipboard4(){
+  var copyTarget = document.getElementById("copyTarget4");
+  copyTarget.select();
+  document.execCommand("Copy");
+}
+function copyToClipboard5(){
+  var copyTarget = document.getElementById("copyTarget5");
   copyTarget.select();
   document.execCommand("Copy");
 }

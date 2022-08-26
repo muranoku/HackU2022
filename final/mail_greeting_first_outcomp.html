@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>mail_greeting_lastく</title>
+  <title>mail_greeting_first_outcomp</title>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     
@@ -47,7 +47,7 @@
   <div class="wrapper2">
     <div class="contents">
       <div id="title">
-        メールで使う結びの挨拶
+        メールで使う冒頭の挨拶 社外編
       </div>
       <hr>
     <!--
@@ -71,27 +71,28 @@
 
     <!--main sentence-->
     <div id="main-sentence">
+      <a class="midasi">通常の挨拶</a>
       <div>
-        <input id="copyTarget1" type="text" value="よろしくお願いいたいします。" readonly>
+        <input id="copyTarget1" type="text" value="お世話になっております。" readonly>
         <button class="btn btn-copy" onclick="copyToClipboard1()"><i class="fa-solid fa-copy"></i></button>
       </div>
       <!--本文-->
-      定番の挨拶です。通常はこの挨拶を使い、状況に応じて表現を変えます。
+      定番の挨拶です。新規作成や返信のときに使用します。日頃やりとりをする相手の他、面識がない相手でも会社として取引があるなら使用しても違和感はありません。
       <br><br><br>
 
       <div>
-        <input id="copyTarget2" type="text" value="引き続きよろしくお願いいたします" readonly>
+        <input id="copyTarget2" type="text" value="大変お世話になっております。" readonly>
         <button class="btn btn-copy" onclick="copyToClipboard2()"><i class="fa-solid fa-copy"></i></button>
       </div>
       <!--本文-->
-      メールのやり取りが続くときに使用します。
+      「お世話になっております。」よりも、お世話になっている程度が強い場合に使用します。
 
       <br><br><br>
       <div>
-        <input id="copyTarget3" type="text" value="今後ともよろしくお願いいたします。" readonly>
+        <input id="copyTarget3" type="text" value="いつもお世話になっています。" readonly>
         <button class="btn btn-copy" onclick="copyToClipboard2()"><i class="fa-solid fa-copy"></i></button>
       </div>
-      メールのやり取りがいったん終了するときに使用します。
+      「お世話になっております。」よりも、お世話になっている頻度が高い場合に使用します。
 
       <br><br><br>
       <div>
@@ -102,17 +103,18 @@
 
       <br><br><br>
       <div>
-        <input id="copyTarget5" type="text" value="ご確認よろしくお願いいたします。" readonly>
+        <input id="copyTarget5" type="text" value="いつも大変お世話になっております。" readonly>
         <button class="btn btn-copy" onclick="copyToClipboard2()"><i class="fa-solid fa-copy"></i></button>
       </div>
-      確認を促すときに、最後の挨拶でも念押しの意味も込めて使用します。
+      「お世話になっております。」よりも、お世話になっている程度が強く頻度が高い場合に使用します。全くお世話になっていない相手から「いつも大変お世話になっております。」と挨拶されると違和感を覚えるので注意。
 
       <br><br><br>
       <div>
-        <input id="copyTarget6" type="text" value="ご検討よろしくお願いいたします。" readonly>
+        <input id="copyTarget6" type="text" value="お世話になります。" readonly>
         <button class="btn btn-copy" onclick="copyToClipboard2()"><i class="fa-solid fa-copy"></i></button>
       </div>
-      検討を促すときに、最後の挨拶でも念押しの意味も込めて使用します。
+      定番の挨拶として使用することもできます。面識のない相手に初めてメールを送るとき「これからお世話になります」という意味を込めて使用することも可能。
+
 
       <br><br><br>
       <div>
@@ -191,8 +193,6 @@
       </div>
       検討を促すときに、最後の挨拶でも念押しの意味も込めて使用します。
 
-
-
     </div>
 
     <!--good button, bad button-->
@@ -217,7 +217,6 @@
   <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </body>
 
-<footer>
-
-</footer>
+<footer></footer>
 </html>
+

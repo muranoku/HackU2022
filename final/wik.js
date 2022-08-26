@@ -1,4 +1,4 @@
-
+/*
 $(function () {
   var words = [
     {
@@ -34,3 +34,4 @@ $(function () {
     },
   });
 });
+*/

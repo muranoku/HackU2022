@@ -138,11 +138,6 @@ html, body {
     margin: 30px auto;
     z-index: 50000;
 }
-.serchbar {
-    width: 280px;
-    margin: 30px auto;
-    z-index: 50000;
-}
 
 .search_area {
     text-align: left;
@@ -176,26 +171,37 @@ html, body {
 /*ここまでいじるとjsが動かなくなる可能性あり*/
 
 /*検索バー装飾*/
-.serch{
-    z-index: 99999;
+.serchbar {
+    width: 280px;
+    margin: 20px 50%;
+    z-index: 2;
     position: fixed; /*位置を固定*/
-    top: 10px;
-    margin:auto;
-    
+}
+.serch{
+    z-index: 2;
+    position: relative; /*位置を固定*/
+    top: 0px;
+    text-align: center;
+    left: -250px;
 }
 .search_container{
   box-sizing: border-box;
   position: relative;
-  border: 1px solid #999;
-  padding: 4px 80px;
-  border-radius: 40px;
+  border: none;
+  padding: 6px 40px 1px 40px;
+  border-radius: 23px;
   height: 2.3em;
   margin: 0 auto;
-  width: 400px;
+  width: 500px;
+  display: flex;
+  background-color: #fff;
+  border: none;
+  height: 30px;
 }
 .search_container input[type="text"]{
   border: none;
-  height: 2.0em;
+  background-color: #fff;
+  height: 1.0em;
 }
 .search_container input[type="text"]:focus {
   outline: 0;
@@ -205,23 +211,36 @@ html, body {
   font-family: FontAwesome;
   border: none;
   border-radius: 50%;
-  background: #3879D9;
-  color: #fff;
+  background: #fff;
+  color: #EE8D8A;
   outline : none;
-  width: 2.0em;
-  height: 2.0em;
+  width: 1.5em;
+  height: 1.5em;
+  position:relative;
+  position: relative;
+  top: -5px;
+  left: 140px;
 }
 /*ハンバーガー装飾*/
 .hamburger{
     position: fixed;
     top: 10px;
     left: 10px; 
-    width:50px;
-    height:50px;
-    background:#3879D9;
+    width:40px;
+    height:40px;
+    background:white;
     border-radius:100%;
     position: fixed;
-    z-index: 9999;
+    z-index: 2;
+}
+.fa-grip-lines{
+    position: relative;
+    color: #707070;
+    font-size: 25px;
+    margin: 7px 0 0 9px;
+}
+.hamburger:hover{
+    cursor: pointer;
 }
 /*ヘッダー装飾*/
 header{

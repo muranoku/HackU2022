@@ -1,104 +1,100 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>用語詳細ページ_よろしく</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>用語詳細ページ_よろしく</title>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
-    crossorigin="anonymous">
-    </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-      
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">   
 </head>
-    <body>
-      <header class="drop-shadow">
-        <div id="header-contents"></div>
-        <div id="header-decoration"></div>  
-      </header>
-    <!--ハンバーガー-->
-      <div class="hamburger"></div>
-        <div class="container">
-		<!--menu bar-->
-    <!-- 絞込み検索UI start -->
-<div class="search_area">
-  <form id="selectForm">
 
-      <ul class="menu-bar">
-        <li class="menu-item">
-            <a href="index.html" style="text-decoration:none" class="menutop_btn" >トップページに戻る</a>
-        </li>
-      
+<body>
+  <header class="drop-shadow">
+    <div id="header-contents"></div>
+    <div id="header-decoration"></div>  
+  </header>
+  <!--ハンバーガー-->
+  <div class="hamburger"></div>
+    <div class="container">
+		  <!--menu bar-->
+      <div class="search_area">
+        <form id="selectForm">
+          <ul class="menu-bar">
+            <li class="menu-item">
+              <a href="index.html" style="text-decoration:none" class="menutop_btn" >トップページに戻る</a>
+            </li>
+          </ul>
+        </form>
       </div>
-    </form>
-  </div>
-  <!-- 絞込み検索UI end -->
-  <!--キーワード検索 start-->
-  <div class="serchbar">
-    <div class="serch">
-      <form method="get" action="#" class="search_container">
-        <input type="text" id="keyword" size="25" placeholder="キーワード検索">
-        <input type="submit" value="&#xf002">
-      </form>
+    </div>
+
+    <!--キーワード検索-->
+    <div class="serchbar">
+      <div class="serch">
+        <form method="get" action="#" class="search_container">
+          <input type="text" id="keyword" size="25" placeholder="キーワード検索">
+          <input type="submit" value="&#xf002">
+        </form>
+      </div>
+    </div>
+
+    <div class="contents">
+      <div id="title">
+        「よろしく」の敬語表現
+      </div>
+                
+    <!--bookmark button-->
+    <div class="bookmark">
+      <div class="hover gray">
+        <i class="fa-regular fa-bookmark"></i>
+      </div>
+    </div>
+
+    <div class="space30px"></div>
+
+		<!--copy button-->
+    <div>
+      <input id="copyTarget" type="text" value="よろしくお願いいたします" readonly>
+      <button class="btn btn-copy" onclick="copyToClipboard()"><i class="fa-solid fa-copy"></i></button>
+    </div>
+    <div>
+      <input id="copyTarget" type="text" value="よろしくお願いします" readonly>
+      <button class="btn btn-copy" onclick="copyToClipboard()"><i class="fa-solid fa-copy"></i></button>
+    </div>
+
+    <!--main sentence-->
+    <div id="main-sentence">
+      本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト
+    </div>
+
+    <!--good button, bad button-->
+      <div class="thumbs-button">
+        <div class="hover green">
+          <i class="fa-solid fa-thumbs-up"></i>
+        </div>
+        <div class="hover red">
+          <i class="fa-solid fa-thumbs-down"></i>
+        </div>
+      </div>
+
+      <p>
+        <a href="index.html">戻る</a>
+      </p>
     </div>
   </div>
-<!-- 絞り込み対象一覧 start -->
-            <div class="contents">
-                <div id="title">
-                    「よろしく」の敬語表現
-                </div>
-                
-                <!--bookmark button-->
-                <div class="bookmark">
-                    <div class="hover gray">
-                        <i class="fa-regular fa-bookmark"></i>
-                    </div>
-                </div>
 
-                <div class="space30px"></div>
+  <script src="script.js"></script>
+  <script src="wik.js"></script>
+  <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</body>
 
-		        <!--copy button-->
-                <div>
-                    <input id="copyTarget" type="text" value="よろしくお願いいたします" readonly>
-                    <button class="btn btn-copy" onclick="copyToClipboard()"><i class="fa-solid fa-copy"></i></button>
-                </div>
-                <div>
-                    <input id="copyTarget" type="text" value="よろしくお願いします" readonly>
-                    <button class="btn btn-copy" onclick="copyToClipboard()"><i class="fa-solid fa-copy"></i></button>
-                </div>
+<footer>
 
-                <!--main sentence-->
-                <div id="main-sentence">
-                    本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト
-                </div>
-
-                <!--good button, bad button-->
-                <div class="thumbs-button">
-                    <div class="hover green">
-                        <i class="fa-solid fa-thumbs-up"></i>
-                    </div>
-                    <div class="hover red">
-                        <i class="fa-solid fa-thumbs-down"></i>
-                    </div>
-                </div>
-
-                <p>
-                    <a href="index.html">戻る</a>
-                </p>
-            </div>
-        </div>
-
-        <script src="script.js"></script>
-        <script src="wik.js"></script>
-        <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    </body>
-
-    <footer>
-    </footer>
+</footer>
 </html>
 

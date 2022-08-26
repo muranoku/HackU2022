@@ -116,7 +116,77 @@ function copyToClipboard6(){
     var copyTarget = document.getElementById("copyTarget5");
     copyTarget.select();
     document.execCommand("Copy");
-  }
+}
+function copyToClipboard7(){
+    var copyTarget = document.getElementById("copyTarget5");
+    copyTarget.select();
+    document.execCommand("Copy");
+}
+function copyToClipboard8(){
+    var copyTarget = document.getElementById("copyTarget5");
+    copyTarget.select();
+    document.execCommand("Copy");
+}
+function copyToClipboard9(){
+    var copyTarget = document.getElementById("copyTarget5");
+    copyTarget.select();
+    document.execCommand("Copy");
+}
+function copyToClipboard10(){
+    var copyTarget = document.getElementById("copyTarget5");
+    copyTarget.select();
+    document.execCommand("Copy");
+}
+function copyToClipboard11(){
+    var copyTarget = document.getElementById("copyTarget5");
+    copyTarget.select();
+    document.execCommand("Copy");
+}
+function copyToClipboard12(){
+    var copyTarget = document.getElementById("copyTarget5");
+    copyTarget.select();
+    document.execCommand("Copy");
+}
+function copyToClipboard13(){
+    var copyTarget = document.getElementById("copyTarget5");
+    copyTarget.select();
+    document.execCommand("Copy");
+}
+function copyToClipboard14(){
+    var copyTarget = document.getElementById("copyTarget5");
+    copyTarget.select();
+    document.execCommand("Copy");
+}
+function copyToClipboard15(){
+    var copyTarget = document.getElementById("copyTarget5");
+    copyTarget.select();
+    document.execCommand("Copy");
+}
+function copyToClipboard16(){
+    var copyTarget = document.getElementById("copyTarget5");
+    copyTarget.select();
+    document.execCommand("Copy");
+}
+function copyToClipboard17(){
+    var copyTarget = document.getElementById("copyTarget5");
+    copyTarget.select();
+    document.execCommand("Copy");
+}
+function copyToClipboard18(){
+    var copyTarget = document.getElementById("copyTarget5");
+    copyTarget.select();
+    document.execCommand("Copy");
+}
+function copyToClipboard19(){
+    var copyTarget = document.getElementById("copyTarget5");
+    copyTarget.select();
+    document.execCommand("Copy");
+}
+function copyToClipboard20(){
+    var copyTarget = document.getElementById("copyTarget5");
+    copyTarget.select();
+    document.execCommand("Copy");
+}
 
 //タイルの表示非表示
 //手紙

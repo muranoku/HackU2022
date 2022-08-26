@@ -220,7 +220,6 @@ $(function() {
 });
 
 
-
 $(function () {
   var words = [
     {
@@ -256,3 +255,6 @@ $(function () {
     },
   });
 });
+
+
+

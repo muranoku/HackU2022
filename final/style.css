@@ -378,8 +378,12 @@ footer{
   color: #2a748a;
   background: none;
 }
-.copyTarget1 ,.copyTarget2 ,.copyTarget3 ,.copyTarget4 ,.copyTarget5 {
+#copyTarget1 ,#copyTarget2 ,#copyTarget3 ,#copyTarget4 ,#copyTarget5 ,#copyTarget6{
   border-width: 0;
+  font-size: large;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 3em;
 }
 
 /*ボタン押下時、位置をずらす*/
@@ -725,8 +729,19 @@ footer{
   height: 100px;
   width:80%;
 }
+
+
+
 .back{
   position: absolute;
   right: 0;
   bottom: 0;
 }
+.midasi{
+  font-size: 20px;
+
+}
+hr {
+  border-top: 5px solid #A5D4D9; ;
+}
+input[type="text"] { width: 20em; }

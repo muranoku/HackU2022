@@ -112,6 +112,11 @@ function copyToClipboard5(){
   copyTarget.select();
   document.execCommand("Copy");
 }
+function copyToClipboard6(){
+    var copyTarget = document.getElementById("copyTarget5");
+    copyTarget.select();
+    document.execCommand("Copy");
+  }
 
 //タイルの表示非表示
 //手紙

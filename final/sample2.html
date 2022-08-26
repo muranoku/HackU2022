@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>mail_greetingく</title>
+  <title>mail_greeting_lastく</title>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     
@@ -47,9 +47,9 @@
   <div class="wrapper2">
     <div class="contents">
       <div id="title">
-        メールで使う挨拶
+        メールで使う結びの挨拶
       </div>
-    
+      <hr>
     <!--
     
     <div class="bookmark">
@@ -59,21 +59,61 @@
     </div>
     -->
 
-    <div class="space30px"></div>
+    <!--<div class="space30px"></div>-->
 
 		<!--copy button-->
+    <!--
     <div>
-      <input id="copyTarget1" type="text" value="よろしくお願いいたします" readonly>
+      <input id="copyTarget1" type="text" value="" readonly>
       <button class="btn btn-copy" onclick="copyToClipboard1()"><i class="fa-solid fa-copy"></i></button>
     </div>
-    <div>
-      <input id="copyTarget2" type="text" value="よろしくお願いします" readonly>
-      <button class="btn btn-copy" onclick="copyToClipboard2()"><i class="fa-solid fa-copy"></i></button>
-    </div>
+    -->
 
     <!--main sentence-->
     <div id="main-sentence">
-      本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト
+      <div>
+        <input id="copyTarget1" type="text" value="よろしくお願いいたいします。" readonly>
+        <button class="btn btn-copy" onclick="copyToClipboard1()"><i class="fa-solid fa-copy"></i></button>
+      </div>
+      <!--本文-->
+      定番の挨拶です。通常はこの挨拶を使い、状況に応じて表現を変えます。
+      <br><br><br>
+
+      <div>
+        <input id="copyTarget2" type="text" value="引き続きよろしくお願いいたします" readonly>
+        <button class="btn btn-copy" onclick="copyToClipboard2()"><i class="fa-solid fa-copy"></i></button>
+      </div>
+      <!--本文-->
+      メールのやり取りが続くときに使用します。
+
+      <br><br><br>
+      <div>
+        <input id="copyTarget3" type="text" value="今後ともよろしくお願いいたします。" readonly>
+        <button class="btn btn-copy" onclick="copyToClipboard2()"><i class="fa-solid fa-copy"></i></button>
+      </div>
+      メールのやり取りがいったん終了するときに使用します。
+
+      <br><br><br>
+      <div>
+        <input id="copyTarget4" type="text" value="それでは、よろしくお願いいたします。" readonly>
+        <button class="btn btn-copy" onclick="copyToClipboard2()"><i class="fa-solid fa-copy"></i></button>
+      </div>
+      メールに書いたことをうけて、それに対する確認や返事を促すときに使用します。
+
+      <br><br><br>
+      <div>
+        <input id="copyTarget5" type="text" value="ご確認よろしくお願いいたします。" readonly>
+        <button class="btn btn-copy" onclick="copyToClipboard2()"><i class="fa-solid fa-copy"></i></button>
+      </div>
+      確認を促すときに、最後の挨拶でも念押しの意味も込めて使用します。
+
+      <br><br><br>
+      <div>
+        <input id="copyTarget6" type="text" value="ご検討よろしくお願いいたします。" readonly>
+        <button class="btn btn-copy" onclick="copyToClipboard2()"><i class="fa-solid fa-copy"></i></button>
+      </div>
+      検討を促すときに、最後の挨拶でも念押しの意味も込めて使用します。
+
     </div>
 
     <!--good button, bad button-->

@@ -1,276 +1,281 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ホーム</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>トップページ</title>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
-    crossorigin="anonymous">
-    </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
       
 </head>
+
 <body>
   <header class="drop-shadow">
     <div id="header-contents"></div>
     <div id="header-decoration"></div>  
   </header>
-<!--ハンバーガー-->
+
+  <!--ハンバーガー-->
   <div class="hamburger"></div>
-<!-- 絞込み検索UI start -->
-<div class="search_area">
-  <form id="selectForm">
-    <div class="container">
-      <ul class="menu-bar">
-        <div class="search_ui category_search_box">
+
+  <!-- 絞込み検索-->
+  <div class="search_area">
+    <form id="selectForm">
+      <div class="container">
+        <ul class="menu-bar">
+          <div class="search_ui category_search_box">
             <li class="menu-item">
-                <i class="fa-solid fa-fish-fins" aria-hidden="true"></i>
-                <label class="checkbox_margin">
-                <input type="radio" name="category" value="friend" class="radio_input">
-                <span class="radio_parts padding_adjust1">友人</span></label>
+              <i class="fa-solid fa-fish-fins" aria-hidden="true"></i>
+              <label class="checkbox_margin">
+              <input type="radio" name="category" value="friend" class="radio_input">
+              <span class="radio_parts padding_adjust1">友人</span></label>
             </li>
             <li class="menu-item">
-                <label class="checkbox_margin">
-                <input type="radio" name="category" value="notfriend" class="radio_input">
-                <span class="radio_parts padding_adjust1">知人</span></label>
+              <label class="checkbox_margin">
+              <input type="radio" name="category" value="notfriend" class="radio_input">
+              <span class="radio_parts padding_adjust1">知人</span></label>
             </li>
             <li class="menu-item">
-                <label class="checkbox_margin">
-                <input type="radio" name="category" value="relatives" class="radio_input">
-                <span class="radio_parts padding_adjust1">親族</span></label>
+              <label class="checkbox_margin">
+              <input type="radio" name="category" value="relatives" class="radio_input">
+              <span class="radio_parts padding_adjust1">親族</span></label>
             </li>
             <li class="menu-item">
               <label class="checkbox_margin">
               <input type="radio" name="category" value="boss" class="radio_input">
               <span class="radio_parts padding_adjust1">上司</span></label>
-          </li>
-          <li class="menu-item">
-            <label class="checkbox_margin">
-            <input type="radio" name="category" value="words" class="radio_input">
-            <span class="radio_parts padding_adjust1">単語</span></label>
-          </li>
-            <li class="menu-item">
-                <label class="checkbox_margin">
-                <input type="radio" name="category" value="" checked="checked" class="radio_input" id="allItem">
-               <span class="radio_parts padding_adjust1">全選択</span></label>
             </li>
-        </div>
-        <div class="search_ui size_search_box pc"> <span id="sizeBox">
-          <label>
-              <input type="checkbox" name="size" value="phone" class="checkbox_input size_sort">
-              <span class="checkbox_parts">電話</span></label><br>
-           <label>
-              <input type="checkbox" name="size" value="mail" class="checkbox_input size_sort">
-              <span class="checkbox_parts">メール</span></label><br>
-           <label>
-              <input type="checkbox" name="size" value="letter" class="checkbox_input size_sort">
-              <span class="checkbox_parts">手紙</span></label><br>
+            <li class="menu-item">
+              <label class="checkbox_margin">
+              <input type="radio" name="category" value="words" class="radio_input">
+              <span class="radio_parts padding_adjust1">単語</span></label>
+            </li>
+            <li class="menu-item">
+              <label class="checkbox_margin">
+              <input type="radio" name="category" value="" checked="checked" class="radio_input" id="allItem">
+              <span class="radio_parts padding_adjust1">全選択</span></label>
+            </li>
+          </div>
+          <div class="search_ui size_search_box pc"> 
+            <span id="sizeBox">
+              <label>
+                <input type="checkbox" name="size" value="phone" class="checkbox_input size_sort">
+                <span class="checkbox_parts">電話</span>
+              </label><br>
+              <label>
+                <input type="checkbox" name="size" value="mail" class="checkbox_input size_sort">
+                <span class="checkbox_parts">メール</span>
+              </label><br>
+              <label>
+                <input type="checkbox" name="size" value="letter" class="checkbox_input size_sort">
+                <span class="checkbox_parts">手紙</span>
+              </label><br>
             </span>
             <label>
               <input type="checkbox" name="size" value="chat" class="checkbox_input size_sort">
-              <span class="checkbox_parts">チャット</span></label><br>
-            </span>
+              <span class="checkbox_parts">チャット</span>
+            </label><br>
             <label class="all_btn">
               <input type="checkbox" id="checkAll" name="size_all" class="checkbox_input">
-              <span class="checkbox_parts">全選択</span></label>
-        </div>
-        <li class="menu-item">
+              <span class="checkbox_parts">全選択</span>
+            </label>
+          </div>
+          <li class="menu-item">
             <a href="index.html" style="text-decoration:none" class="menutop_btn" >トップページに戻る</a>
-        </li>
+          </li>
+        </ul>
       </div>
     </form>
   </div>
-  <!-- 絞込み検索UI end -->
-  <!--キーワード検索 start-->
-    <div class="serchbar">
-      <div class="serch">
-        <form method="get" action="#" class="search_container">
-          <input type="text" id="keyword" size="25" placeholder="キーワード検索">
-          <input type="submit" value="&#xf002">
-        </form>
-      </div>
+
+  <!--キーワード検索-->
+  <div class="serchbar">
+    <div class="serch">
+      <form method="get" action="#" class="search_container">
+        <input type="text" id="keyword" size="25" placeholder="キーワード検索">
+        <input type="submit" value="&#xf002">
+      </form>
     </div>
-  <!-- 絞り込み対象一覧 start -->
+  </div>
+
+  <!-- 絞り込み対象一覧-->
   <br>
-    <div class="wrapper"> 
-        <div class="item_container list">
-          <!--タイル start-->
-          <!--手紙-->
-          <div class="item"  style="text-align:center" data-category='["friend"]' data-size="phone">
-            <p class="item_name"></p>
-            <a class="A">電話・友人</a>  
-          </div>
-          <div class="A1">
-            <a href="sample2.html" class="btn" >電話・友人</a>
-          </div>
+  <div class="wrapper"> 
+    <div class="item_container list">
+      <!--タイル一覧-->
+      <!--手紙-->
+      <div class="item"  style="text-align:center" data-category='["friend"]' data-size="phone">
+        <p class="item_name"></p>
+        <a class="A">電話・友人</a>  
+      </div>
+      <div class="A1">
+        <a href="sample2.html" class="btn" >電話・友人</a>
+      </div>
 
-          <div class="item"  style="text-align:center" data-category='["notfriend"]' data-size="phone">
-            <p class="item_name"></p>
-            <a class="B">電話・知人</a>  
-          </div>
-          <div class="B1">
-            <a href="sample2.html" class="btn" >電話・知人</a>
-          </div>
+      <div class="item"  style="text-align:center" data-category='["notfriend"]' data-size="phone">
+        <p class="item_name"></p>
+        <a class="B">電話・知人</a>  
+      </div>
+      <div class="B1">
+        <a href="sample2.html" class="btn" >電話・知人</a>
+      </div>
 
-          <div class="item"  style="text-align:center" data-category='["relatives"]' data-size="phone">
-            <p class="item_name"></p>
-            <a class="C">電話・親族</a>  
-          </div>
-          <div class="C1">
-            <a href="sample2.html" class="btn" >電話・親族</a>
-          </div>
+      <div class="item"  style="text-align:center" data-category='["relatives"]' data-size="phone">
+        <p class="item_name"></p>
+        <a class="C">電話・親族</a>  
+      </div>
+      <div class="C1">
+        <a href="sample2.html" class="btn" >電話・親族</a>
+      </div>
 
-          <div class="item"  style="text-align:center" data-category='["boss"]' data-size="phone">
-            <p class="item_name"></p>
-            <a class="D">電話・上司</a>  
-          </div>
-          <div class="D1">
-            <a href="sample2.html" class="btn" >電話・上司</a>
-          </div>
+      <div class="item"  style="text-align:center" data-category='["boss"]' data-size="phone">
+        <p class="item_name"></p>
+        <a class="D">電話・上司</a>  
+      </div>
+      <div class="D1">
+        <a href="sample2.html" class="btn" >電話・上司</a>
+      </div>
 
-          <div class="item"  style="text-align:center" data-category='["words"]' data-size="phone">
-            <p class="item_name"></p>
-            <a class="E">電話・単語</a>  
-          </div>
-          <div class="E1">
-            <a href="sample2.html" class="btn" >手紙・単語</a>
-          </div>
-          <!--手紙ここまで-->
-          <!--メール-->
-          <div class="item"  style="text-align:center" data-category='["friend"]' data-size="mail">
-            <p class="item_name"></p>
-            <a class="F">メール・友人</a>  
-          </div>
-          <div class="F1">
-            <a href="sample2.html" class="btn" >メール・友人</a>
-          </div>
+      <div class="item"  style="text-align:center" data-category='["words"]' data-size="phone">
+        <p class="item_name"></p>
+        <a class="E">電話・単語</a>  
+      </div>
+      <div class="E1">
+        <a href="sample2.html" class="btn" >手紙・単語</a>
+      </div>
+      
+      <!--メール-->
+      <div class="item"  style="text-align:center" data-category='["friend"]' data-size="mail">
+        <p class="item_name"></p>
+        <a class="F">メール・友人</a>  
+      </div>
+      <div class="F1">
+        <a href="sample2.html" class="btn" >メール・友人</a>
+      </div>
 
-          <div class="item"  style="text-align:center" data-category='["notfriend"]' data-size="mail">
-            <p class="item_name"></p>
-            <a class="G">メール・知人</a>  
-          </div>
-          <div class="G1">
-            <a href="sample2.html" class="btn" >メール・知人</a>
-          </div>
+      <div class="item"  style="text-align:center" data-category='["notfriend"]' data-size="mail">
+        <p class="item_name"></p>
+        <a class="G">メール・知人</a>  
+      </div>
+      <div class="G1">
+        <a href="sample2.html" class="btn" >メール・知人</a>
+      </div>
 
-          <div class="item"  style="text-align:center" data-category='["relatives"]' data-size="mail">
-            <p class="item_name"></p>
-            <a class="H">メール・親族</a>  
-          </div>
-          <div class="H1">
-            <a href="sample2.html" class="btn" >メール・親族</a>
-          </div>
+      <div class="item"  style="text-align:center" data-category='["relatives"]' data-size="mail">
+        <p class="item_name"></p>
+        <a class="H">メール・親族</a>  
+      </div>
+      <div class="H1">
+        <a href="sample2.html" class="btn" >メール・親族</a>
+      </div>
 
-          <div class="item"  style="text-align:center" data-category='["boss"]' data-size="mail">
-            <p class="item_name"></p>
-            <a class="I">メール・上司</a>  
-          </div>
-          <div class="I1">
-            <a href="sample2.html" class="btn" >メール・上司</a>
-          </div>
+      <div class="item"  style="text-align:center" data-category='["boss"]' data-size="mail">
+        <p class="item_name"></p>
+        <a class="I">メール・上司</a>  
+      </div>
+      <div class="I1">
+        <a href="sample2.html" class="btn" >メール・上司</a>
+      </div>
 
-          <div class="item"  style="text-align:center" data-category='["words"]' data-size="mail">
-            <p class="item_name"></p>
-            <a class="J">メール・単語</a>  
-          </div>
-          <div class="J1">
-            <a href="sample2.html" class="btn" >メール・単語</a>
-          </div>
-          <!--メール終わり-->
-          <!--手紙-->
-          <div class="item"  style="text-align:center" data-category='["friend"]' data-size="letter">
-            <p class="item_name"></p>
-            <a class="K">手紙・友人</a>  
-          </div>
-          <div class="K1">
-            <a href="sample2.html" class="btn" >手紙・友人</a>
-          </div>
+      <div class="item"  style="text-align:center" data-category='["words"]' data-size="mail">
+        <p class="item_name"></p>
+        <a class="J">メール・単語</a>  
+      </div>
+      <div class="J1">
+        <a href="sample2.html" class="btn" >メール・単語</a>
+      </div>
 
-          <div class="item"  style="text-align:center" data-category='["notfriend"]' data-size="letter">
-            <p class="item_name"></p>
-            <a class="L">手紙・知人</a>  
-          </div>
-          <div class="L1">
-            <a href="sample2.html" class="btn" >手紙・知人</a>
-          </div>
+      <!--手紙-->
+      <div class="item"  style="text-align:center" data-category='["friend"]' data-size="letter">
+        <p class="item_name"></p>
+        <a class="K">手紙・友人</a>  
+      </div>
+      <div class="K1">
+        <a href="sample2.html" class="btn" >手紙・友人</a>
+      </div>
 
-          <div class="item"  style="text-align:center" data-category='["relatives"]' data-size="letter">
-            <p class="item_name"></p>
-            <a class="M">手紙・親族</a>  
-          </div>
-          <div class="M1">
-            <a href="sample2.html" class="btn" >手紙・親族</a>
-          </div>
+      <div class="item"  style="text-align:center" data-category='["notfriend"]' data-size="letter">
+        <p class="item_name"></p>
+        <a class="L">手紙・知人</a>  
+      </div>
+      <div class="L1">
+        <a href="sample2.html" class="btn" >手紙・知人</a>
+      </div>
 
-          <div class="item"  style="text-align:center" data-category='["boss"]' data-size="letter">
-            <p class="item_name"></p>
-            <a class="N">手紙・上司</a>  
-          </div>
-          <div class="N1">
-            <a href="sample2.html" class="btn" >手紙・上司</a>
-          </div>
+      <div class="item"  style="text-align:center" data-category='["relatives"]' data-size="letter">
+        <p class="item_name"></p>
+        <a class="M">手紙・親族</a>  
+      </div>
+      <div class="M1">
+        <a href="sample2.html" class="btn" >手紙・親族</a>
+      </div>
 
-          <div class="item"  style="text-align:center" data-category='["words"]' data-size="letter">
-            <p class="item_name"></p>
-            <a class="O">手紙・単語</a>  
-          </div>
-          <div class="O1">
-            <a href="sample2.html" class="btn" >手紙・単語</a>
-          </div>
-          <!--手紙終わり-->
-          <!--チャット-->
-          <div class="item"  style="text-align:center" data-category='["friend"]' data-size="chat">
-            <p class="item_name"></p>
-            <a class="P">チャット・友人</a>  
-          </div>
-          <div class="P1">
-            <a href="sample2.html" class="btn" >チャット・友人</a>
-          </div>
+      <div class="item"  style="text-align:center" data-category='["boss"]' data-size="letter">
+        <p class="item_name"></p>
+        <a class="N">手紙・上司</a>  
+      </div>
+      <div class="N1">
+        <a href="sample2.html" class="btn" >手紙・上司</a>
+      </div>
 
-          <div class="item"  style="text-align:center" data-category='["notfriend"]' data-size="chat">
-            <p class="item_name"></p>
-            <a class="Q">チャット・知人</a>  
-          </div>
-          <div class="Q1">
-            <a href="sample2.html" class="btn" >チャット・知人</a>
-          </div>
+      <div class="item"  style="text-align:center" data-category='["words"]' data-size="letter">
+        <p class="item_name"></p>
+        <a class="O">手紙・単語</a>  
+      </div>
+      <div class="O1">
+        <a href="sample2.html" class="btn" >手紙・単語</a>
+      </div>
 
-          <div class="item"  style="text-align:center" data-category='["relatives"]' data-size="chat">
-            <p class="item_name"></p>
-            <a class="R">チャット・親族</a>  
-          </div>
-          <div class="R1">
-            <a href="sample2.html" class="btn" >チャット・親族</a>
-          </div>
+      <!--チャット-->
+      <div class="item"  style="text-align:center" data-category='["friend"]' data-size="chat">
+        <p class="item_name"></p>
+        <a class="P">チャット・友人</a>  
+      </div>
+      <div class="P1">
+        <a href="sample2.html" class="btn" >チャット・友人</a>
+      </div>
 
-          <div class="item"  style="text-align:center" data-category='["boss"]' data-size="chat">
-            <p class="item_name"></p>
-            <a class="S">チャット・上司</a>  
-          </div>
-          <div class="S1">
-            <a href="sample2.html" class="btn" >チャット・上司</a>
-          </div>
+      <div class="item"  style="text-align:center" data-category='["notfriend"]' data-size="chat">
+        <p class="item_name"></p>
+        <a class="Q">チャット・知人</a>  
+      </div>
+      <div class="Q1">
+        <a href="sample2.html" class="btn" >チャット・知人</a>
+      </div>
 
-          <div class="item"  style="text-align:center" data-category='["words"]' data-size="chat">
-            <p class="item_name"></p>
-            <a class="T">チャット・単語</a>  
-          </div>
-          <div class="T1">
-            <a href="sample2.html" class="btn" >チャット・単語</a>
-          </div>
-          <!--チャット終わり-->
-          <!--タイル end-->
-    </div>
-</div>
- <!-- 絞り込み対象一覧 end -->
-<script src="script.js"></script>
-<script src="wik.js"></script>
-<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      <div class="item"  style="text-align:center" data-category='["relatives"]' data-size="chat">
+        <p class="item_name"></p>
+        <a class="R">チャット・親族</a>  
+      </div>
+      <div class="R1">
+        <a href="sample2.html" class="btn" >チャット・親族</a>
+      </div>
+
+      <div class="item"  style="text-align:center" data-category='["boss"]' data-size="chat">
+        <p class="item_name"></p>
+        <a class="S">チャット・上司</a>  
+      </div>
+      <div class="S1">
+        <a href="sample2.html" class="btn" >チャット・上司</a>
+      </div>
+
+      <div class="item"  style="text-align:center" data-category='["words"]' data-size="chat">
+        <p class="item_name"></p>
+        <a class="T">チャット・単語</a>  
+      </div>
+      <div class="T1">
+        <a href="sample2.html" class="btn" >チャット・単語</a>
+      </div>
+    </div> 
+  </div>
+
+  <script src="script.js"></script>
+  <script src="wik.js"></script>
+  <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </body>
 </html>
